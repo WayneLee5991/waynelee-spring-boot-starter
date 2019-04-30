@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		<title>出错了</title>
+		<style type="text/css">
+			table {
+				border:1px solid black;border-spacing:0;text-align: left;margin: 0 auto
+			}
+		</style>
+	</head>
+	<body>
+		<div style="text-align: center">
+		
+			<h1>出错了</h1>
+			<table border="1">
+				<tr>
+					<td>错误路径:</td>
+					<td><span th:text="${url}"></span></td>
+				</tr>
+				<tr>
+					<td>错误code:</td>
+					<td><span th:text="${code}"></span></td>
+				</tr>
+				<tr>
+					<td>错误msg:</td>
+					<td><span th:text="${msg}"></span></td>
+				</tr>
+				<tr>
+					<td>异常信息 :</td>
+					<td><span th:text="${stackTrace}"></span></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
